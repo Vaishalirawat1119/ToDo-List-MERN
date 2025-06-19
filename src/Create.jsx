@@ -1,10 +1,15 @@
 import React from 'react'
 
 function Create() {
+  const [task, setTask] = useState();
+  const handleAdd = () => {
+    
+  }
+
   return (
     <div className='create_form'>
-      <input type="text" name='' id='' placeholder='Enter Task'/>
-      <button type='button'>Add</button>
+      <input type="text" name='' id='' placeholder='Enter Task' onclick={(e) => setTask(e.target.value)}/>
+      <button type='button' onClick={handleAdd}>Add</button>
     </div>
   )
 }
